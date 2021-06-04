@@ -49,6 +49,7 @@ img {
     opacity: 0.6;
 }
 
+
 .container__information {
     display: flex;
     flex-direction: column;
@@ -64,7 +65,11 @@ img {
     color: var(--main-heading-stats);
 }
 
-.container__information p {
+.container__information h1 > span {
+    color: hsl(277, 64%, 61%);
+}
+
+.container__information > p {
     margin-top: 20px;
     font-size: 1.4rem;
     font-family: 'Lexend Deca', sans-serif;
@@ -96,4 +101,10 @@ img {
     font-family: 'Inter', sans-serif;
     letter-spacing: 2px;
     color: var(--stat-headings);
+}
+
+.attribution {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
 }
