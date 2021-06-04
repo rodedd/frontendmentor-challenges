@@ -68,7 +68,7 @@ img {
     margin-top: 20px;
     font-size: 1.4rem;
     font-family: 'Lexend Deca', sans-serif;
-    line-height: 20px;
+    line-height: 25px;
     word-spacing: 4px;
     color: var(--main-paragraph);
 }
@@ -84,7 +84,8 @@ img {
 
 .container__statistics .big-number {
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
     color: var(--main-heading-stats);
     margin-top: 30px;
 }
@@ -92,5 +93,7 @@ img {
 .big-number+p {
     margin-top: 5px;
     font-size: 1.2rem;
-    color: var(--main-paragraph);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+    color: var(--stat-headings);
 }
