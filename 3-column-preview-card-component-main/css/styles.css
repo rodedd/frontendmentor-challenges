@@ -1,0 +1,126 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-grey: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.box {
+  padding: 40px 50px;
+  width: 100%;
+}
+
+.box-1 {
+  background-color: var(--bright-orange);
+}
+
+.box-2 {
+  background-color: var(--dark-cyan);
+}
+
+.box-3 {
+  background-color: var(--very-dark-cyan);
+}
+
+.logo-sedan {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-image: url('../images/icon-sedans.svg');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.logo-suvs {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-image: url('../images/icon-suvs.svg');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.logo-luxury {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-image: url('../images/icon-luxury.svg');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 32px;
+  color: var(--very-light-grey);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--transparent-white);
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #FFF;
+  border-radius: 20px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 14px;
+}
+
+.box-1 .button {
+  color: var(--bright-orange);
+}
+
+.box-2 .button {
+  color: var(--dark-cyan);
+}
+
+.box-3 .button {
+  color: var(--very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
