@@ -1,0 +1,143 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --title: 'Poppins', sans-serif;
+  --body: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--body);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+
+  background-color: var(--violet);
+}
+
+header {
+  display: flex;
+
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+header img{
+  align-self: flex-start;
+  width: 40%;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 380px;
+
+  background-image: url('../images/bg-mobile.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+  height: auto;
+  padding: 30px 30px 60px;
+}
+
+main img {
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__text h2 {
+  font-family: var(--title);
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+}
+
+.main__text p {
+  padding: 20px 0;
+
+  font-family: var(--body);
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+}
+
+.main__text button {
+  width: 70%;
+  height: 40px;
+  
+  font-size: 1.4rem;
+  color: var(--violet);
+  border: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 12px 7px 15px -1px rgba(0,0,0,0.32); 
+  box-shadow: 12px 7px 15px -1px rgba(0,0,0,0.32);
+}
+
+.main__text button:hover {
+  background-color: var(--soft-magenta);
+  color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 80px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 50%;
+
+  font-size: 3rem;
+  color: #fff;
+}
+
+.social-media i:hover {
+  color: var(--soft-magenta);
+  cursor: pointer;
+}
+
+/*Attribution*/
+.attribution { 
+  color: #fff;
+  font-size: 1.1rem; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: #000; 
+}
