@@ -1,0 +1,131 @@
+:root {
+  --soft-blue: rgb(139, 172, 218);
+  --cyan: rgb(0, 255, 247);
+  --very-dark-blue-main: rgb(13, 25, 43);
+  --very-dark-blue-card: rgb(20, 37, 61);
+  --very-dark-blue-line: rgb(47, 65, 91);
+  --white: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--very-dark-blue-main);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  height: 550px;
+
+  padding: 20px 20px 0;
+
+  background-color: var(--very-dark-blue-card);
+  border-radius: 16px;
+}
+
+.card-content {
+  border-bottom: 1px solid var(--very-dark-blue-line);
+}
+
+.card-content img {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+.card-content h2 {
+  margin-top: 20px;
+
+  font-size: 2.4rem;
+  color: var(--white);
+}
+
+.card-content p {
+  margin-top: 20px;
+
+  font-size: 1.8rem;
+  color: var(--soft-blue);
+}
+
+.card-content .card-content__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-content .card-content__info div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.card-content .card-content__info div:nth-child(1) img {
+  width: 14px;
+}
+.card-content .card-content__info div:nth-child(1) span {
+  margin-left: 8px;
+  font-size: 1.6rem;
+  color: var(--cyan);
+}
+
+.card-content .card-content__info div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  color: var(--soft-blue);
+}
+.card-content .card-content__info div:nth-child(2) img {
+  width: 20px;
+}
+.card-content .card-content__info div:nth-child(2) span {
+  margin-left: 8px;
+  font-size: 1.6rem;
+  color: var(--soft-blue);
+}
+
+.card-credits {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+.card-credits img {
+  width: 32px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.card-credits p {
+  margin-left: 12px;
+
+  font-size: 1.6rem;
+  color: var(--soft-blue);
+}
+.card-credits p span {
+  color: var(--white);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: rgb(62, 82, 163);
+}
